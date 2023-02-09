@@ -16,7 +16,7 @@ const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Sa
   }
   
   function getResults (query) {
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${query}&units=imperial&appid=5670cb22608853cc7531a1aa12630f5e`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${query}&units=imperial&appid=5670cb22608853cc7531a1aa12630f5e`)
       .then(weather => {
         return weather.json();
       }).then(displayForeCast);
