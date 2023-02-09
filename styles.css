@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+
+body {
+    background-color: #c4cacf;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.city-input {
+    height: 40px;
+    width: 300px;
+    border-width: 5px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: cursive;
+    border-style: solid;
+    color: black;
+}
+
+.current-weather-info {
+    margin: 5%;
+    background: rgba(255, 255, 255, 0.596);
+    width: fit-content;
+    padding: 2%;
+    border-radius: 10px;
+    position: relative;
+    top: 175px;
+    text-align: center;
+}
+
+.city-name {
+    font-size: 50px;
+    margin: 0;
+    margin-top: 10px;
+    font-family: Satisfy, curisve;
+    text-align: center;
+}
+
+.current-temp {
+    font-family: Rubik Gemstones, cursive;
+    font-size: 150px;
+    margin: 0;
+}
+
+.current-descrption {
+    font-size: 30px;
+    margin: 0;
+    font-family: cursive;
+}
+
+.forcast {
+    background: rgba(255, 255, 255, 0.596);
+    width: fit-content;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    left: 70%;
+    bottom: 470px;
+}
+
+.day0,.day1,.day2,.day3,.day4,.day5,.day6{
+    display: flex;
+    border: 5px solid #15156d;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+}
+
+.day{
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.weather {
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.icon {
+    width: 90px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        height: 100%;
+        background-repeat: repeat;
+        background-position-y: 50px;    }
+
+    .current-weather-info {
+        background-color: #c4cacf;
+        display: flex;
+        align-items: center;
+    }
+
+    .forcast {
+        position: absolute;
+        bottom: 30px;
+        align-items: center;
+    }
+}
